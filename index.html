@@ -2,7 +2,7 @@
 <html lang="en-ca">
 <head>
   <meta charset="utf-8">
-  <title>Volunteer Form</title>
+  <title>Volunteer Sign-up</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link href="css/modules.css" rel="stylesheet">
   <link href="css/grid.css" rel="stylesheet">
@@ -11,7 +11,6 @@
   <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,400i,700" rel="stylesheet">
 </head>
 <body>
-Volunteer Sign-up
   <header class="island">
     <h1 class="bold push-1-2">Apply to be a tree planter</h1>
     <p class="mega push-0">Trees are one of the world’s most precious renewable resources—we need your help to renew the ecosystem.<p>
@@ -54,23 +53,23 @@ Volunteer Sign-up
           <input id="email" type="email">
         </div>
         <div>
-          <label for"phone" type="optional">Phone number <h2 class="kilo italic optional">(optional)</h2></label>
-          <input id="phone" type="phone">
+          <label for="phone">Phone number </label><h2 class="kilo italic optional">(optional)</h2>
+          <input id="phone" type="tel">
         </div>
       </form>
     <h1 class="giga pad-t-2 strong">Address</h1>
       <form action="#" method="post">
         <div class="push">
-          <label for="address">Street address</label>
-          <input id="address" type="address">
+          <label>Street address</label>
+          <input id="address" type="text">
         </div>
         <div class="push">
-          <label for="city">City</label>
-          <input id="city" type="city">
+          <label>City</label>
+          <input id="city" type="text">
         </div>
         <div class="push">
-          <label for="province">Province</label>
-          <select id="province" name="_province">
+          <label>Province</label>
+          <select id="province" name="_text">
             <option>Select a province</option>
             <option>Alberta</option>
             <option>British Columbia</option>
@@ -88,67 +87,133 @@ Volunteer Sign-up
           </select>
         </div>
         <div>
-          <label for="postalcode">Postal code</label>
-          <input id="postalcode" type="postalcode">
+          <label>Postal code</label>
+          <input id="postalcode" type="text">
         </div>
       </form>
       <form action="#" method="post">
         <h1 class="giga pad-t-2 strong">What activities are you interested in helping with?</h1>
-        <grid>
-          <div class="unit xs-1 s-1 m-1 l-1-2 xl-1-2">
-            <input id="activities" type="checkbox">
-            <label for="activities">Digging holes</label>
-            <input id="activities" type="checkbox">
-            <label for="activities">Getting dirty</label>
-            <input id="activities" type="checkbox">
-            <label for="activities">Lifting heavy objects</label>
-            <input id="activities" type="checkbox">
-            <label for="activities">Driving people</label>
+        <div class="grid">
+          <div class="unit xs-1 s-1 m-1-2 l-1-2 xl-1-2">
+            <div class="push-1-4">
+              <input id="holes" type="checkbox">
+              <label for="holes">Digging holes</label>
+            </div>
+            <div class="push-1-4">
+              <input id="dirty" type="checkbox">
+              <label for="dirty">Getting dirty</label>
+            </div>
+            <div class="push-1-4">
+              <input id="lifting" type="checkbox">
+              <label for="lifting">Lifting heavy objects</label>
+            </div>
+            <div class="push-1-4">
+              <input id="driving" type="checkbox">
+              <label for="driving">Driving people</label>
+            </div>
           </div>
-          <div class="unit xs-1 s-1 m-1 l-1-2 xl-1-2">
-            <input id="activities" type="checkbox">
-            <label for="activities">Transporting trees</label>
-            <input id="activities" type="checkbox">
-            <label for="activities">Taking photos</label>
-            <input id="activities" type="checkbox">
-            <label for="activities">Online publishing</label>
-            <input id="activities" type="checkbox">
-            <label for="activities">Managing people</label>
+          <div class="unit xs-1 s-1 m-1-2 l-1-2 xl-1-2">
+            <div class="push-1-4">
+              <input id="transporting" type="checkbox">
+              <label for="transporting">Transporting trees</label>
+            </div>
+            <div class="push-1-4">
+              <input id="photos" type="checkbox">
+              <label for="photos">Taking photos</label>
+            </div>
+            <div class="push-1-4">
+              <input id="publishing" type="checkbox">
+              <label for="publishing">Online publishing</label>
+            </div>
+            <div>
+              <input id="managing" type="checkbox">
+              <label for="managing">Managing people</label>
+            </div>
           </div>
-        </grid>
+        </div>
       </form>
-
-  Do you have any experience with the following?
-  - Shovels
-  - Hand-held GPS
-  - Writing & blogging
-  - Photography
-  - Trail & hill climbing
-  - Bush craft
-  - ATVs
-  - Plant identification
-  - Special event planning
-  - Speaking to groups
-
-  Do you have a valid driver’s license?
-  - Yes
-  - No
-
-  Do you have a pick-up truck you’d be willing to use?
-  - Yes
-  - No
-
-  Do you have up-to-date first-aid certification?
-  - Yes
-  - No
-
-  Please let us know any comments or questions you may have.
-
-  Apply
-
+      <form action="#" method="post">
+        <h1 class="giga pad-t-2 strong">Do you have any experience with the following?</h1>
+        <div class="grid">
+          <div class="unit xs-1 s-1 m-1-2 l-1-2 xl-1-2">
+            <div class="push-1-4">
+              <input id="shovels" type="checkbox">
+              <label for="shovels">Shovels</label>
+            </div>
+            <div class="push-1-4">
+              <input id="gps" type="checkbox">
+              <label for="gps">Hand-held GPS</label>
+            </div>
+            <div class="push-1-4">
+              <input id="writing" type="checkbox">
+              <label for="writing">Writing & blogging</label>
+            </div>
+            <div class="push-1-4">
+              <input id="photography" type="checkbox">
+              <label for="photography">Photography</label>
+            </div>
+            <div class="push-1-4">
+                <input id="climbing" type="checkbox">
+                <label for="climbing">Trail & hill climbing</label>
+            </div>
+          </div>
+          <div class="unit xs-1 s-1 m-1-2 l-1-2 xl-1-2">
+            <div class="push-1-4">
+              <input id="bush" type="checkbox">
+              <label for="bush">Bush craft</label>
+            </div>
+            <div class="push-1-4">
+              <input id="atvs" type="checkbox">
+              <label for="atvs">ATVs</label>
+            </div>
+            <div class="push-1-4">
+              <input id="plantid" type="checkbox">
+              <label for="plantid">Plant identification</label>
+            </div>
+            <div class="push-1-4">
+              <input id="special" type="checkbox">
+              <label for="special">Special event planning</label>
+            </div>
+            <div class="push-1-4">
+              <input id="groups" type="checkbox">
+              <label for="groups">Speaking to groups</label>
+            </div>
+          </div>
+        </div>
+      </form>
+      <form action="#" method="post">
+        <div>
+          <h1 class="giga pad-t-2 strong">Do you have a valid driver’s license?</h1>
+          <input id="license" type="radio">
+          <label for="license"> Yes </label>
+          <input id="nolicense" type="radio">
+          <label for="nolicense">No</label>
+        </div>
+        <div>
+          <h1 class="giga pad-t-2 strong">Do you have a pick-up truck you’d be willing to use?</h1>
+          <input id="truck" type="radio">
+          <label for="truck">Yes</label>
+          <input id="notruck" type="radio">
+          <label for="notruck">No</label>
+        </div>
+        <div>
+          <h1 class="giga pad-t-2 strong">Do you have up-to-date first-aid certification?</h1>
+          <input id="firstaid" type="radio">
+          <label for="firstaid">Yes</label>
+          <input id="nofirstaid" type="radio">
+          <label for="nofirstaid">No</label>
+        </div>
+      </form>
+      <form action="#" method="post">
+        <h1 class="giga pad-t-2 strong">Please let us know any comments or questions you may have.</h1>
+        <textarea id="details" name="details"></textarea>
+      </form>
+      <div class="pad-t-2">
+        <button class="center tera gutter-2 btn push-2" type="submit">Apply</button>
+      </div>
   </section>
-
-  © Tree Hugger International Organization
-
+  <footer class="gutter-1-2 pad-t pad-b-1-2">
+    <p>© Tree Hugger International Organization</p>
+  </footer>
 </body>
 </html>

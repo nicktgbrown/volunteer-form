@@ -5,20 +5,23 @@ html {
 header {
   color: #fff;
   background-color: #70ad55;
-}
-
-header {
   padding-left: 1em;
   padding-top: 0.5em;
   padding-bottom: 0.5em;
 }
 
-input {
-  border-color: #6e8c62;
+footer {
+  color: #fff;
+  background-color: #70ad55;
 }
 
 select {
   border-color: #6e8c62;
+}
+
+textarea {
+  border-color:#6e8c62;
+  height: 10em;
 }
 
 .optional {
@@ -29,6 +32,12 @@ select {
 form {
   border-bottom: 2px solid #70ad55;
   padding-bottom: 3em;
+}
+
+.btn {
+  align-self: center;
+  background-color: #6e8c62;
+  border-color: #6e8c62;
 }
 
 @media only screen and (min-width: 60em) {
