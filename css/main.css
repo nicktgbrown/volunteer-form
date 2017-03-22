@@ -1,13 +1,13 @@
 html {
-  font-family: 'Droid Serif', serif;
+  font-family: "Droid Serif", serif;
 }
 
 header {
   color: #fff;
   background-color: #70ad55;
-  padding-left: .5em;
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
+  padding-left: .7em;
+  padding-top: 1.1em;
+  padding-bottom: .9em;
 }
 
 footer {
@@ -20,19 +20,18 @@ select {
 }
 
 textarea {
-  border-color:#6e8c62;
+  border-color: #6e8c62;
   height: 10em;
 }
 
 .optional {
-  display: inline;
   color: #70ad55;
 }
 
 hr {
   border-color: #70ad55;
-  margin-top: 3em;
-  margin-bottom: 0em;
+  margin-top: 2em;
+  margin-bottom: .5em;
 }
 
 .btn {
@@ -41,12 +40,44 @@ hr {
   border-color: #6e8c62;
 }
 
+fieldset {
+  border: none;
+}
+
+input {
+  border-color: #6e8c62;
+  margin-top: .1em;
+}
+
+@media only screen and (min-width: 25em) {
+
+  header {
+    padding-left: .1em;
+    padding-top: 2em;
+  }
+
+}
+
+@media only screen and (min-width: 38em) {
+
+  header {
+    padding-left: .7em;
+    padding-top: 1.5em;
+    padding-bottom: .6em;
+  }
+
+}
+
 @media only screen and (min-width: 60em) {
 
   header {
     padding-left: 6em;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
+    padding-top: .5em;
+    padding-bottom: .5em;
+  }
+
+  h1 {
+    padding-bottom: 2em;
   }
 
 }
